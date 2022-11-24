@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>MatHS</title>
+</head>
+<body>
+  <div><h1>Maths Traning for VEDIKA</h1></div>
+  <div class="select" id="select">
+    <form id="select-form">
+      <label for="calcMethod" class="calcMethod">Calculation Method:</label>
+      <select id="calcMethod">
+        <option></option>
+        <option value="addition">Add</option>
+        <option value="subtraction">Substract</option>
+        <option value="multiplication">Multiply</option>
+        <option value="division">Divide</option>
+      </select>
+    </form>
+  </div>
+
+  <div class="container">
+    <h3 id="method"></h3>
+    <button class="btn" id="start">Start</button>
+    <div class="input-calc">
+      <p>Enter your answer</p>
+      <h1 id="calc"></h1>
+      <input type="text" id="number" autocomplete="off" placeholder="Write your answer here..."/>
+    </div>
+    <p class="time-container">Time left: <span id="time">30s</span></p>
+    <p class="score-container">Score: <span id="score">0</span></p>
+    
+  </div>
+  <div id="end-game-container" class="end-game-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
