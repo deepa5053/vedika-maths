@@ -15,7 +15,7 @@ const method = document.getElementById("method")
 let x;
 let y;
 let randomAdd;
-let time = 30;
+//let time = 30;
 let score = 0;
 let calcMethod = "";
 let timeInterval;
@@ -181,6 +181,6 @@ function updateScore(){
 
 //funktion som visar end-game-container
 function gameOver() {
-  endgameEl.innerHTML = `<h1>Tiden är slut!</h1><p>Du fick ${score} poäng</p><button class="btn" onClick="location.reload()">Försök igen</button>`
+  endgameEl.innerHTML = `<h1>Time Out</h1><p>You Got ${score} </p><button class="btn" onClick="location.reload()">Try Again</button>`
   endgameEl.style.display = "flex";
 }
